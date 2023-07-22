@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaram App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Multiple Timer App</h1>
+        </header>
+        <div class="timer-container">
+            <div class="timer-box">
+                <p>Set Time :</p>
+                <div class="timer-inputs">
+                    <input type="number" placeholder="HH" id="hour">
+                    <span>:</span>
+                    <input type="number" placeholder="MM" id="minute">
+                    <span>:</span>
+                    <input type="number" placeholder="SS" id="second">
+                </div>
+                <input type="button" value="Set" id="start-btn" class="btn">
+            </div>
+            <div class="marker">Current Timers</div>
+            <p id="t-update">You have no timers currently!</p>
+            <div class="time-laps">
+                <div class="timer-box">
+                    <p>Time Left :</p>
+                    <div class="time-left">
+                        <span>hh</span>
+                        <span>:</span>
+                        <span>mm</span>
+                        <span>:</span>
+                        <span>ss</span>
+                    </div>
+                    <input type="button" value="Stop" id="stop-btn" class="btn">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

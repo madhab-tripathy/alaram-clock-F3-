@@ -18,7 +18,7 @@ header{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 0.5rem;
+    margin: 1rem 0;
 }
 .container{
     display: flex;
@@ -29,8 +29,12 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-y: scroll;
     align-items: center;
 }
+.timer-container::-webkit-scrollbar {
+    display: none;
+  }
 p{
     color: #FFFFFF;
 }
@@ -65,21 +69,35 @@ input[type=number]::-webkit-outer-spin-button {
     height: 50px;
     background-color:#34344A;
     margin: 0.8rem 0;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius:8px;
     justify-content:center;
     align-items: center;
     justify-content: space-between;
 }
+.timer-box p{
+    width: 80px;
+}
+.timer-box.time-up{
+    background-color: #F0F757;
+    color: #34344A;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
 input.btn{
     background-color: #F0F757;
+    color: #34344A;
     height: 30px;
     border: 1px solid #F0F757;
     outline: none;
     border-radius: 16px;
     width: 70px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
+}
+input.btn.time-up-btn{
+    background-color:#34344A;
+    color: white;
 }
 .marker{
     background-color: #39393E;
@@ -98,6 +116,6 @@ input.btn{
 #t-update{
     margin: 1rem; /* need to be diplay none*/
 }
-.time-laps{
-    /* height:60vh; */
+#active-timers{
+    max-height: 58vh;   
 }
